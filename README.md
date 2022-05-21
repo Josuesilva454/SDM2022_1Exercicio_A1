@@ -1,5 +1,5 @@
 Alunos: Jataiza Barboza   RA:320231856
-Jataiza Barboza   RA:320231856
+Josue Silva Rosa   RA:320243792
 
 # Enunciado SDM 2022_1 A1
 
