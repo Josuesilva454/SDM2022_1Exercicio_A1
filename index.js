@@ -2,6 +2,26 @@ const express = require('express');//importei o express para utilizar no meu pro
 
 const app = express(); // intancie o objeto app na classe express ();
 
+app.post('/user', [
+    //validação dos dados
+    body('nome').isEmail(),
+    body('Genero').isEmail({ min: 5 })
+  ], (req, res) => {
+    // caso encontre erros, ficará nessa variável errors
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
+    res.json({
+        msg: "messagem realizado com susseso"
+});
+     
+    //se os dados forem válidos, o sistema executará aqui
+  });
+
+// Rotas referente ao crud de produtos
+
+
 const produtos = [
     { nome: "Lápis", idade: 2.20 },
     { nome: "Cardeno", preco: 6.20 },
@@ -26,10 +46,10 @@ app.get('/', (req, res) => {
 app.get('/produtos', (req, res) => {
     return res.json(produtos);
 });
-app.get('/filmes', (req, res) => {
+app.get('/filmes/filmes/{id}', (req, res) => {
     return res.json(filmes);
 });
-app.get('/musica', (req, res) => {
+app.post('/musica/{id}/{autor}/{genero}, (req, res) => {
     return res.json(musica);
 });
 
