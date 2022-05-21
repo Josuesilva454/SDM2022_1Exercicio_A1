@@ -1,7 +1,7 @@
-Alunos: 
--Jataiza Barboza       RA:320231856
--Josue Silva Rosa      RA:320243792
--Phillip Gomes Câmara  RA:321127398
+Alunos:<br>
+🫠 Jataiza Barboza       RA:320231856<br>
+🫠 Josue Silva Rosa      RA:320243792<br>
+🫠 Phillip Gomes Câmara  RA:321127398
 
 # Enunciado SDM 2022_1 A1
 
