@@ -35,4 +35,4 @@ app.get('/musica', (req, res) => {
 
 //http://localhost:3000
 app.listen(3000);
-
+console.log("Rodando o servidor");
